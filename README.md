@@ -65,12 +65,12 @@
         - me
 ```
 ### 🌐 MultiLanguage
-> [English](https://github.com/fernanACM/WorldCommandBlocker/blob/PM4/resources/languages/eng.yml)
-> [Spanish](https://github.com/fernanACM/WorldCommandBlocker/blob/PM4/resources/languages/spa.yml)
-> [Indonesian](https://github.com/fernanACM/WorldCommandBlocker/blob/PM4/resources/languages/indo.yml)
-> [German](https://github.com/fernanACM/WorldCommandBlocker/blob/PM4/resources/languages/ger.yml)
-> [French](https://github.com/fernanACM/WorldCommandBlocker/blob/PM4/resources/languages/frc.yml)
-> [Portuguese](https://github.com/fernanACM/WorldCommandBlocker/blob/PM4/resources/languages/portg.yml)
+* [English](https://github.com/fernanACM/WorldCommandBlocker/blob/PM4/resources/languages/eng.yml)
+* [Spanish](https://github.com/fernanACM/WorldCommandBlocker/blob/PM4/resources/languages/spa.yml)
+* [Indonesian](https://github.com/fernanACM/WorldCommandBlocker/blob/PM4/resources/languages/indo.yml)
+* [German](https://github.com/fernanACM/WorldCommandBlocker/blob/PM4/resources/languages/ger.yml)
+* [French](https://github.com/fernanACM/WorldCommandBlocker/blob/PM4/resources/languages/frc.yml)
+* [Portuguese](https://github.com/fernanACM/WorldCommandBlocker/blob/PM4/resources/languages/portg.yml)
 
 ### 📞 Contact
 | Redes | Tag | Link |
