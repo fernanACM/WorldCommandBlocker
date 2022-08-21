@@ -10,7 +10,6 @@
 
 namespace fernanACM\WorldCommandBlocker;
 
-use fernanACM\PluginUtils;
 use pocketmine\Server;
 use pocketmine\player\Player;
 
