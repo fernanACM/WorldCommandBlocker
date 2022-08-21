@@ -8,11 +8,11 @@
 
 # Di sini Anda dapat mengubah pesan plugin dengan sangat mudah, Anda juga
 # Anda dapat menggunakan "kunci" untuk mengubah warna/kata kunci.
-# ======(KEYS)======
+# ======(KUNCI)======
 # "{LINE}" => "\n",
 # "{NAME}" => $player->getName(), // Nama pemain
 # "{WORLD}" => $player->getWorld()->getDisplayName(), // Nama dunia
-# Colors
+# Warna
 # "{BLACK}" => TextFormat::BLACK,
 # "{DARK_BLUE}" => TextFormat::DARK_BLUE,
 # "{DARK_GREEN}" => TextFormat::DARK_GREEN,

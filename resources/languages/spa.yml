@@ -8,11 +8,11 @@
 
 # Aquí podrás cambiar los mensajes del plugin muy fácilmente, además te
 # podrá usar "claves" para los colores/palabras clave.
-# ======(KEYS)======
+# ======(CLAVES)======
 # "{LINE}" => "\n",
 # "{NAME}" => $player->getName(), // Nombre del jugador
 # "{WORLD}" => $player->getWorld()->getDisplayName(), // Nombre del mundo
-# Colors
+# Colores
 # "{BLACK}" => TextFormat::BLACK,
 # "{DARK_BLUE}" => TextFormat::DARK_BLUE,
 # "{DARK_GREEN}" => TextFormat::DARK_GREEN,

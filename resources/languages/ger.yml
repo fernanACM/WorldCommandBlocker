@@ -8,11 +8,11 @@
 
 # Hier können Sie ganz einfach Plugin-Nachrichten einschließlich Ihnen ändern
 # Sie können "Schlüssel" für Farben/Schlüsselwörter verwenden.
-# ======(KEYS)======
+# ======(SCHIÜSSEL)======
 # "{LINE}" => "\n",
 # "{NAME}" => $player->getName(), // Name des Spielers
 # "{WORLD}" => $player->getWorld()->getDisplayName(), // Weltname
-# Colors
+# Farben
 # "{BLACK}" => TextFormat::BLACK,
 # "{DARK_BLUE}" => TextFormat::DARK_BLUE,
 # "{DARK_GREEN}" => TextFormat::DARK_GREEN,
