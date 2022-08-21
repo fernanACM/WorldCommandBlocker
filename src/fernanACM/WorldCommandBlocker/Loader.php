@@ -49,7 +49,7 @@ class Loader extends PluginBase{
         $this->saveResource("config.yml");
         $this->saveResource("messages.yml");
         $this->config = new Config($this->getDataFolder() . "config.yml");
-        $this->messages = new Config($this->getFile() . "resources/languages/" . $this->config->get("language", "eng") . ".yml");
+        $this->messages = new Config($this->getDataFolder() . "languages/" . DIRECTORY_SEPARATOR . $this->config->get("language") . ".yml");
         $this->blocker = $this->config->getNested("Settings.blocked-commands", []);
         # Languages
         @mkdir($this->getDataFolder() . "languages");
