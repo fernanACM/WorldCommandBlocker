@@ -59,7 +59,7 @@ class Loader extends PluginBase{
     }
 
     public function loadEvents(){
-        $this->getServer()->getPluginManager()->registerEvent(new Event($this), $this);
+        $this->getServer()->getPluginManager()->registerEvents(new Event($this), $this);
     }
 
     public function getMessage(Player $player, string $key){
