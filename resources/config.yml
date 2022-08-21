@@ -8,8 +8,14 @@
  # Bloquea comandos en cierto mundo con mucha facilidad en la config.yml
 
 # =======(SETTINGS)=======
-# Types languages
+# Types languages:
 
+# "eng" => English - default
+# "spa" => Spanish
+# "indo" => Indonesian
+# "ger" => German
+# "frc" => French
+# "portg" => Portuguese
 language: eng
 # Here you will be able to block many 
 # commands with the following example:
