@@ -29,7 +29,7 @@ class Event implements Listener{
             if(isset(Loader::getInstance()->blocker[$player->getWorld()->getDisplayName()])){
                 if(in_array(str_replace("/", "", $command), Loader::getInstance()->blocker[$player->getWorld()->getDisplayName()])){
                     $event->cancel();
-                    if(Loader::getInstance()->config->getNested("Settings.blocked-message")){
+                    if(Loader::getInstance()->config->getNested("blocked-message")){
                         $prefix = Loader::getInstance()->getMessage($player, "Prefix");
                         $player->sendMessage($prefix . Loader::getInstance()->getMessage($player, "error-message"));
                         PluginUtils::PlaySound($player, "mob.villager.no", 1, 1);
@@ -40,7 +40,7 @@ class Event implements Listener{
             if(isset(Loader::getInstance()->blocker[$player->getWorld()->getDisplayName()])){
                 if(in_array(str_replace("./", "", $command), Loader::getInstance()->blocker[$player->getWorld()->getDisplayName()])){
                     $event->cancel();
-                    if(Loader::getInstance()->config->getNested("Settings.blocked-message")){
+                    if(Loader::getInstance()->config->getNested("blocked-message")){
                         $prefix = Loader::getInstance()->getMessage($player, "Prefix");
                         $player->sendMessage($prefix . Loader::getInstance()->getMessage($player, "error-message"));
                         PluginUtils::PlaySound($player, "mob.villager.no", 1, 1);
@@ -51,7 +51,7 @@ class Event implements Listener{
             if(isset(Loader::getInstance()->blocker[$player->getWorld()->getDisplayName()])){
                 if(in_array(str_replace("", "", $command), Loader::getInstance()->blocker[$player->getWorld()->getDisplayName()])){
                     $event->cancel();
-                    if(Loader::getInstance()->config->getNested("Settings.blocked-message")){
+                    if(Loader::getInstance()->config->getNested("blocked-message")){
                         $prefix = Loader::getInstance()->getMessage($player, "Prefix");
                         $player->sendMessage($prefix . Loader::getInstance()->getMessage($player, "error-message"));
                         PluginUtils::PlaySound($player, "mob.villager.no", 1, 1);
