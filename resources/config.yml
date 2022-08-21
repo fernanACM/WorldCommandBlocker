@@ -8,6 +8,9 @@
  # Bloquea comandos en cierto mundo con mucha facilidad en la config.yml
 
 # =======(SETTINGS)=======
+# Types languages
+
+language: eng
 # Here you will be able to block many 
 # commands with the following example:
 Settings:
