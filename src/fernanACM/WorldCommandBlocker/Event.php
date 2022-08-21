@@ -26,7 +26,7 @@ class Event implements Listener{
         $player = $event->getPlayer();
         $command = explode(" ", $event->getMessage())[0];
         if(str_starts_with($command, "/")){
-            if(isset(Loader::blocker[$player->getWorld()->getDisplayName()])){
+            if(isset(Loader::getInstance()->blocker[$player->getWorld()->getDisplayName()])){
                 if(in_array(str_replace("/", "", $command), Loader::blocker[$player->getWorld()->getDisplayName()])){
                     $event->cancel();
                     $prefix = Loader::getMessage($player, "Prefix");
@@ -35,7 +35,7 @@ class Event implements Listener{
                 }
             }
         }elseif(str_starts_with($command, "./")){
-            if(isset(Loader::blocker[$player->getWorld()->getDisplayName()])){
+            if(isset(Loader::getInstance()->blocker[$player->getWorld()->getDisplayName()])){
                 if(in_array(str_replace("./", "", $command), Loader::blocker[$player->getWorld()->getDisplayName()])){
                     $event->cancel();
                     $prefix = Loader::getMessage($player, "Prefix");
@@ -44,7 +44,7 @@ class Event implements Listener{
                 }
             }
         }elseif(str_starts_with($command, "")){
-            if(isset(Loader::blocker[$player->getWorld()->getDisplayName()])){
+            if(isset(Loader::getInstance()->blocker[$player->getWorld()->getDisplayName()])){
                 if(in_array(str_replace("", "", $command), Loader::blocker[$player->getWorld()->getDisplayName()])){
                     $event->cancel();
                     $prefix = Loader::getMessage($player, "Prefix");
