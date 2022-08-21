@@ -29,8 +29,8 @@ class Event implements Listener{
             if(isset(Loader::getInstance()->blocker[$player->getWorld()->getDisplayName()])){
                 if(in_array(str_replace("/", "", $command), Loader::getInstance()->blocker[$player->getWorld()->getDisplayName()])){
                     $event->cancel();
-                    $prefix = Loader::getMessage($player, "Prefix");
-                    $player->sendMessage($prefix . Loader::getMessage($player, "error-message"));
+                    $prefix = Loader::getInstance()->getMessage($player, "Prefix");
+                    $player->sendMessage($prefix . Loader::getInstance()->getMessage($player, "error-message"));
                     PluginUtils::PlaySound($player, "mob.villager.no", 1, 1);
                 }
             }
@@ -38,8 +38,8 @@ class Event implements Listener{
             if(isset(Loader::getInstance()->blocker[$player->getWorld()->getDisplayName()])){
                 if(in_array(str_replace("./", "", $command), Loader::getInstance()->blocker[$player->getWorld()->getDisplayName()])){
                     $event->cancel();
-                    $prefix = Loader::getMessage($player, "Prefix");
-                    $player->sendMessage($prefix . Loader::getMessage($player, "error-message"));
+                    $prefix = Loader::getInstance()->getMessage($player, "Prefix");
+                    $player->sendMessage($prefix . Loader::getInstance()->getMessage($player, "error-message"));
                     PluginUtils::PlaySound($player, "mob.villager.no", 1, 1);
                 }
             }
@@ -47,8 +47,8 @@ class Event implements Listener{
             if(isset(Loader::getInstance()->blocker[$player->getWorld()->getDisplayName()])){
                 if(in_array(str_replace("", "", $command), Loader::getInstance()->blocker[$player->getWorld()->getDisplayName()])){
                     $event->cancel();
-                    $prefix = Loader::getMessage($player, "Prefix");
-                    $player->sendMessage($prefix . Loader::getMessage($player, "error-message"));
+                    $prefix = Loader::getInstance()->getMessage($player, "Prefix");
+                    $player->sendMessage($prefix . Loader::getInstance()->getMessage($player, "error-message"));
                     PluginUtils::PlaySound($player, "mob.villager.no", 1, 1);
                 }
             }
