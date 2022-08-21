@@ -8,6 +8,9 @@
  # Bloquea comandos en cierto mundo con mucha facilidad en la config.yml
 
 # =======(SETTINGS)=======
+# Error message, use "true" or "false" 
+# to enable/disable this option
+blocked-message: true
 # Types languages:
 
 # "eng" => English - default
