@@ -30,9 +30,12 @@ class Loader extends PluginBase{
     public static $instance;
     # MultiLanguages
     public const LANGUAGES = [
-        "en",
-        "spa",
-        "indo"
+        "eng", // English
+        "spa", // Spanish
+        "indo", //Indonesian
+        "ger", // German
+        "frc", // French
+        "portg" // Portuguese
     ];
 
     public function onEnable(): void{
@@ -46,7 +49,7 @@ class Loader extends PluginBase{
         $this->saveResource("config.yml");
         $this->saveResource("messages.yml");
         $this->config = new Config($this->getDataFolder() . "config.yml");
-        $this->messages = new Config($this->getFile() . "resources/languages/" . $this->config->get("language", "en") . ".yml");
+        $this->messages = new Config($this->getFile() . "resources/languages/" . $this->config->get("language", "eng") . ".yml");
         $this->blocker = $this->config->getNested("Settings.blocked-commands", []);
         # Languages
         @mkdir($this->getDataFolder() . "languages");
