@@ -10,7 +10,7 @@
     
 declare(strict_types=1);
 
-namespace fernanACM;
+namespace fernanACM\WorldCommandBlocker\utils;
 
 use pocketmine\player\Player;
 use pocketmine\Server;
