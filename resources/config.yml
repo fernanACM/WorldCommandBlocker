@@ -22,6 +22,15 @@ blocked-message: true
 language: eng
 # Here you will be able to block many 
 # commands with the following example:
+
+# ===================== #
+# Settings:             #
+#   blocked-commands:   #
+#     world name:       #
+#       - commando here #
+#       - gamemode      #
+# ===================== #
+
 Settings:
   blocked-commands:
     world:
