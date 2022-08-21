@@ -24,7 +24,8 @@ class Event implements Listener{
 
     public function onPreCommand(PlayerCommandPreprocessEvent $event){
         $player = $event->getPlayer();
-        $command = explode(" ", $event->getMessage())[0];
+        $messageCMD = $event->getMessage();
+        $command = strtolower(explode(" ", $messageCMD, 2)[0]);
         if(str_starts_with($command, "/")){
             if(isset(Loader::getInstance()->blocker[$player->getWorld()->getDisplayName()])){
                 if(in_array(str_replace("/", "", $command), Loader::getInstance()->blocker[$player->getWorld()->getDisplayName()])){
