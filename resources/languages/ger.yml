@@ -1,0 +1,39 @@
+# __        __   ____   ____  
+# \ \      / /  / ___| | __ ) 
+#  \ \ /\ / /  | |     |  _ \ 
+#   \ V  V /   | |___  | |_) |
+#    \_/\_/     \____| |____/ 
+#         von fernanACM
+# Bearbeiten Sie die Nachricht wie gewünscht. Sie können auch die folgenden Tasten verwenden.
+
+# Hier können Sie ganz einfach Plugin-Nachrichten einschließlich Ihnen ändern
+# Sie können "Schlüssel" für Farben/Schlüsselwörter verwenden.
+# ======(KEYS)======
+# "{LINE}" => "\n",
+# "{NAME}" => $player->getName(), // Name des Spielers
+# "{WORLD}" => $player->getWorld()->getDisplayName(), // Weltname
+# Colors
+# "{BLACK}" => TextFormat::BLACK,
+# "{DARK_BLUE}" => TextFormat::DARK_BLUE,
+# "{DARK_GREEN}" => TextFormat::DARK_GREEN,
+# "{CYAN}" => TextFormat::DARK_AQUA,
+# "{DARK_RED}" => TextFormat::DARK_RED,
+# "{PURPLE}" => TextFormat::DARK_PURPLE,
+# "{GOLD}" => TextFormat::GOLD,
+# "{GRAY}" => TextFormat::GRAY,
+# "{DARK_GRAY}" => TextFormat::DARK_GRAY,
+# "{BLUE}" => TextFormat::BLUE,
+# "{GREEN}" => TextFormat::GREEN,
+# "{AQUA}" => TextFormat::AQUA,
+# "{RED}" => TextFormat::RED,
+# "{PINK}" => TextFormat::LIGHT_PURPLE,
+# "{YELLOW}" => TextFormat::YELLOW,
+# "{WHITE}" => TextFormat::WHITE,
+# "{ORANGE}" => "§6"
+# "{BOLD}" => TextFormat::BOLD,
+# "{RESET}" => TextFormat::RESET
+
+# Prefix
+Prefix: "{BOLD}{GRAY}[{RED}WCB{GRAY}]{DARK_GRAY}»{RESET} "
+# =======(MESSAGE)=======
+error-message: "{RED}¡Hey {NAME}!, dieser Befehl ist in {GREEN}{WORLD}{RED} verboten."
