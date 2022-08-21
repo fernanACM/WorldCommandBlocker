@@ -1,0 +1,25 @@
+ # __        __   ____   ____  
+ # \ \      / /  / ___| | __ ) 
+ #  \ \ /\ / /  | |     |  _ \ 
+ #   \ V  V /   | |___  | |_) |
+ #    \_/\_/     \____| |____/ 
+ #         by fernanACM
+ # Block commands by worlds with WorldCommandBlocker, only for PocketMine-MP 4.0 servers.
+ # Bloquea comandos en cierto mundo con mucha facilidad en la config.yml
+
+# =======(SETTINGS)=======
+# Here you will be able to block many 
+# commands with the following example:
+Settings:
+  blocked-commands:
+    world:
+      - gamemode
+      - me
+      - say
+    Lobby:
+      - tp
+      - ah
+      - sethome
+    Mine:
+      - sethome
+      - me
