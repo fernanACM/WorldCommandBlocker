@@ -4,14 +4,14 @@
 #   \ V  V /   | |___  | |_) |
 #    \_/\_/     \____| |____/ 
 #         by fernanACM
-# Edita el mensaje a tu gusto, también puedes utilizar las siguientes claves.
+# Edit pesan sesuka Anda, Anda juga dapat menggunakan tombol berikut.
 
-# Aquí podrás cambiar los mensajes del plugin muy fácilmente, además te
-# podrá usar "claves" para los colores/palabras clave.
+# Di sini Anda dapat mengubah pesan plugin dengan sangat mudah, Anda juga
+# Anda dapat menggunakan "kunci" untuk mengubah warna/kata kunci.
 # ======(KEYS)======
 # "{LINE}" => "\n",
-# "{NAME}" => $player->getName(), // Nombre del jugador
-# "{WORLD}" => $player->getWorld()->getDisplayName(), // Nombre del mundo
+# "{NAME}" => $player->getName(), // Nama pemain
+# "{WORLD}" => $player->getWorld()->getDisplayName(), // Nama dunia
 # Colors
 # "{BLACK}" => TextFormat::BLACK,
 # "{DARK_BLUE}" => TextFormat::DARK_BLUE,
@@ -36,4 +36,4 @@
 # Prefix
 Prefix: "{BOLD}{GRAY}[{RED}WCB{GRAY}]{DARK_GRAY}»{RESET} "
 # =======(MESSAGE)=======
-error-message: "{RED}¡Hey {NAME}!, este comando está prohibido en {GREEN}{WORLD}{RED}."
+error-message: "{RED}¡Hei {NAME}!, perintah ini dilarang masuk {GREEN}{WORLD}{RED}."
