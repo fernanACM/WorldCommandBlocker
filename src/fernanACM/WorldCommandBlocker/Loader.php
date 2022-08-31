@@ -37,25 +37,26 @@ class Loader extends PluginBase{
         "frc", // French
         "portg" // Portuguese
     ];
-
+    
     public function onEnable(): void{
-        self::$instance = $this;
+         # Config files
         $this->loadFiles();
         $this->loadEvents();
+        # Instance
+        self::$instance = $this;
     }
-
+    
     public function loadFiles(){
-        # Config files
-        $this->saveResource("config.yml");
-        $this->saveResource("messages.yml");
-        $this->config = new Config($this->getDataFolder() . "config.yml");
-        $this->messages = new Config($this->getDataFolder() . "languages/" . DIRECTORY_SEPARATOR . $this->config->get("language") . ".yml");
-        $this->blocker = $this->config->getNested("Settings.blocked-commands", []);
-        # Languages
+         # Config files
         @mkdir($this->getDataFolder() . "languages");
+        $this->saveResource("config.yml");
+        $this->config = new Config($this->getDataFolder() . "config.yml");
+        # Languages
         foreach(Loader::LANGUAGES as $language){
-            $this->saveResource("languages" . DIRECTORY_SEPARATOR . $language . ".yml");
+            $this->saveResource("languages/" . $language . ".yml");
         }
+        $this->messages = new Config($this->getDataFolder() . "languages/" . $this->config->get("language") . ".yml");
+        $this->blocker = $this->config->getNested("Settings.blocked-commands", []);
     }
 
     public function loadEvents(){
