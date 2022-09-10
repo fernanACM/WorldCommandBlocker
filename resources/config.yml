@@ -19,6 +19,7 @@ blocked-message: true
 # "ger" => German
 # "frc" => French
 # "portg" => Portuguese
+# "vie" => Vietnamese
 language: eng
 # Here you will be able to block many 
 # commands with the following example:
