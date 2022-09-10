@@ -35,7 +35,8 @@ class Loader extends PluginBase{
         "indo", //Indonesian
         "ger", // German
         "frc", // French
-        "portg" // Portuguese
+        "portg", // Portuguese
+        "vie" // Vietnamese
     ];
     
     public function onEnable(): void{
