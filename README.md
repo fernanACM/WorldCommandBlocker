@@ -38,6 +38,7 @@
   # "ger" => German
   # "frc" => French
   # "portg" => Portuguese
+  # "vie" => Vietnamese
   language: eng
   # Here you will be able to block many 
   # commands with the following example:
@@ -71,6 +72,7 @@
 * [German](https://github.com/fernanACM/WorldCommandBlocker/blob/PM4/resources/languages/ger.yml)
 * [French](https://github.com/fernanACM/WorldCommandBlocker/blob/PM4/resources/languages/frc.yml)
 * [Portuguese](https://github.com/fernanACM/WorldCommandBlocker/blob/PM4/resources/languages/portg.yml)
+* [Vietnamese](https://github.com/fernanACM/WorldCommandBlocker/blob/PM4/resources/languages/vie.yml)
 
 ### 📞 Contact
 | Redes | Tag | Link |
