@@ -7,6 +7,8 @@
  # Block commands by worlds with WorldCommandBlocker, only for PocketMine-MP 4.0 servers.
  # Bloquea comandos en cierto mundo con mucha facilidad en la config.yml
 
+# Config version:
+config-version: "1.0.0"
 # =======(SETTINGS)=======
 # Error message, use "true" or "false" 
 # to enable/disable this option
