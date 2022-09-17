@@ -5,7 +5,7 @@
 #    \_/\_/     \____| |____/ 
 #         bởi fernanACM
 # Chỉnh sửa tin nhắn theo ý thích của bạn, bạn cũng có thể sử dụng các khóa sau.
-
+language-version: "1.0.0"
 # Tại đây bạn sẽ có thể thay đổi thông báo của plugin rất dễ dàng, ngoài ra bạn 
 # sẽ có thể sử dụng "các khóa" cho Màu sắc/Từ khóa.
 # ======(KHÓA)======

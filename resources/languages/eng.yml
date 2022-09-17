@@ -5,7 +5,7 @@
 #    \_/\_/     \____| |____/ 
 #         by fernanACM
 # Edit the message to your liking, you can also use the following keys.
-
+language-version: "1.0.0"
 # Here you will be able to change the messages of the plugin very easily, in addition you 
 # will be able to use "keys" for the colors/keywords.
 # ======(KEYS)======
