@@ -29,33 +29,41 @@ class Event implements Listener{
         if(str_starts_with($command, "/")){
             if(isset(Loader::getInstance()->blocker[$player->getWorld()->getDisplayName()])){
                 if(in_array(str_replace("/", "", $command), Loader::getInstance()->blocker[$player->getWorld()->getDisplayName()])){
-                    $event->cancel();
-                    if(Loader::getInstance()->config->getNested("blocked-message")){
-                        $prefix = Loader::getInstance()->getMessage($player, "Prefix");
-                        $player->sendMessage($prefix . Loader::getInstance()->getMessage($player, "error-message"));
-                        PluginUtils::PlaySound($player, "mob.villager.no", 1, 1);
+                    if(!$player->hasPermission("worldcommandblocker.allow.acm")){
+                        $event->cancel();
+                        if(Loader::getInstance()->config->getNested("blocked-message")){
+                            $prefix = Loader::getInstance()->getMessage($player, "Prefix");
+                            $player->sendMessage($prefix . Loader::getInstance()->getMessage($player, "error-message"));
+                            PluginUtils::PlaySound($player, "mob.villager.no", 1, 1);
+                        }
                     }
                 }
             }
         }elseif(str_starts_with($command, "./")){
             if(isset(Loader::getInstance()->blocker[$player->getWorld()->getDisplayName()])){
                 if(in_array(str_replace("./", "", $command), Loader::getInstance()->blocker[$player->getWorld()->getDisplayName()])){
-                    $event->cancel();
-                    if(Loader::getInstance()->config->getNested("blocked-message")){
-                        $prefix = Loader::getInstance()->getMessage($player, "Prefix");
-                        $player->sendMessage($prefix . Loader::getInstance()->getMessage($player, "error-message"));
-                        PluginUtils::PlaySound($player, "mob.villager.no", 1, 1);
+                    if(!$player->hasPermission("worldcommandblocker.allow.acm")){
+                        $event->cancel();
+                        if(Loader::getInstance()->config->getNested("blocked-message")){
+                            $prefix = Loader::getInstance()->getMessage($player, "Prefix");
+                            $player->sendMessage($prefix . Loader::getInstance()->getMessage($player, "error-message"));
+                            PluginUtils::PlaySound($player, "mob.villager.no", 1, 1);
+                        }
                     }
                 }
             }
         }elseif(str_starts_with($command, "")){
             if(isset(Loader::getInstance()->blocker[$player->getWorld()->getDisplayName()])){
                 if(in_array(str_replace("", "", $command), Loader::getInstance()->blocker[$player->getWorld()->getDisplayName()])){
-                    $event->cancel();
-                    if(Loader::getInstance()->config->getNested("blocked-message")){
-                        $prefix = Loader::getInstance()->getMessage($player, "Prefix");
-                        $player->sendMessage($prefix . Loader::getInstance()->getMessage($player, "error-message"));
-                        PluginUtils::PlaySound($player, "mob.villager.no", 1, 1);
+                    if(!$player->hasPermission("worldcommandblocker.allow.acm")){
+                        if(!$player->hasPermission("worldcommandblocker.allow.acm")){
+                            $event->cancel();
+                            if(Loader::getInstance()->config->getNested("blocked-message")){
+                                $prefix = Loader::getInstance()->getMessage($player, "Prefix");
+                                $player->sendMessage($prefix . Loader::getInstance()->getMessage($player, "error-message"));
+                                PluginUtils::PlaySound($player, "mob.villager.no", 1, 1);
+                            }
+                        }
                     }
                 }
             }
