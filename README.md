@@ -65,6 +65,9 @@
         - sethome
         - me
 ```
+### 🚫 Permission
+- Have no restrictions when using the locked commands: `worldcommandblocker.allow.acm`
+
 ### 🌐 MultiLanguage
 * [English](https://github.com/fernanACM/WorldCommandBlocker/blob/PM4/resources/languages/eng.yml)
 * [Spanish](https://github.com/fernanACM/WorldCommandBlocker/blob/PM4/resources/languages/spa.yml)
