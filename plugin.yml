@@ -5,3 +5,7 @@ api: 4.0.0
 author: fernanACM
 description: Block commands by worlds with WorldCommandBlocker, only for PocketMine-MP 4.0 servers
 website: https://github.com/fernanACM
+
+permissions:
+  worldcommandblocker.allow.acm:
+    default: op
