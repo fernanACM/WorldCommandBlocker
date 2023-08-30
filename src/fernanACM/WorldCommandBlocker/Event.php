@@ -39,9 +39,8 @@ class Event implements Listener{
                     $player->hasPermission("worldcommandblocker.allow.$worldFolderName") || $player->hasPermission($permissionToCheck)
                 )){
                     $event->cancel();
-                    if(WCB::getInstance()->config->getNested("blocked-message")) {
-                        $prefix = WCB::getInstance()->getMessage($player, "Prefix");
-                        $player->sendMessage($prefix . WCB::getInstance()->getMessage($player, "error-message"));
+                    if(WCB::getInstance()->config->getNested("blocked-message")){
+                        $player->sendMessage(WCB::Prefix() . WCB::getMessage($player, "error-message"));
                         PluginUtils::PlaySound($player, "mob.villager.no", 1, 1);
                     }
                 }
