@@ -1,11 +1,11 @@
 name: WorldCommandBlocker
-main: fernanACM\WorldCommandBlocker\Loader
-version: 1.0.0
-api: 4.0.0
+main: fernanACM\WorldCommandBlocker\WCB
+version: 2.0.0
+api: 5.3.0
 author: fernanACM
-description: Block commands by worlds with WorldCommandBlocker, only for PocketMine-MP 4.0 servers
+description: Block commands by worlds with WorldCommandBlocker, only for PocketMine-MP 5.0 servers
 website: https://github.com/fernanACM
 
 permissions:
-  worldcommandblocker.allow.acm:
+  worldcommandblocker.allow:
     default: op

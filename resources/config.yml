@@ -4,28 +4,25 @@
  #   \ V  V /   | |___  | |_) |
  #    \_/\_/     \____| |____/ 
  #         by fernanACM
- # Block commands by worlds with WorldCommandBlocker, only for PocketMine-MP 4.0 servers.
+ # Block commands by worlds with WorldCommandBlocker, only for PocketMine-MP 5.0 servers.
  # Bloquea comandos en cierto mundo con mucha facilidad en la config.yml
 
+# Prefix:
+Prefix: "&l&7[&cWCB&7]&8»&r "
 # Config version:
-config-version: "1.0.0"
+config-version: "2.0.0"
 # =======(SETTINGS)=======
 # Error message, use "true" or "false" 
 # to enable/disable this option
 blocked-message: true
-# Types languages:
-
-# "eng" => English - default
-# "spa" => Spanish
-# "indo" => Indonesian
-# "ger" => German
-# "frc" => French
-# "portg" => Portuguese
-# "vie" => Vietnamese
-language: eng
+# Use:
+# & => "§", color
+# "{LINE}" => "\n",
+# "{NAME}" => $player->getName(), // Player name
+# "{WORLD}" => $player->getWorld()->getDisplayName(), // World name
+error-message: "&cHey {NAME}!, this command is prohibited in &a{WORLD}&c."
 # Here you will be able to block many 
 # commands with the following example:
-
 # ===================== #
 # Settings:             #
 #   blocked-commands:   #
@@ -33,7 +30,6 @@ language: eng
 #       - commando here #
 #       - gamemode      #
 # ===================== #
-
 Settings:
   blocked-commands:
     world:
