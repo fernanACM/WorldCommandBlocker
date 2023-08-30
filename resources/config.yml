@@ -19,8 +19,8 @@ blocked-message: true
 # & => "§", color
 # "{LINE}" => "\n",
 # "{NAME}" => $player->getName(), // Player name
-# "{WORLD}" => $player->getWorld()->getDisplayName(), // World name
-error-message: "&cHey {NAME}!, this command is prohibited in &a{WORLD}&c."
+# "{WORLD_NAME}" => $player->getWorld()->getDisplayName(), // World name
+error-message: "&cHey {NAME}!, this command is prohibited in &a{WORLD_NAME}&c."
 # Here you will be able to block many 
 # commands with the following example:
 # ===================== #
