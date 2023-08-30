@@ -52,8 +52,6 @@ class WCB extends PluginBase{
      * @return void
      */
     private function loadFiles(): void{
-         # Config files
-         @mkdir($this->getDataFolder() . "languages");
          $this->saveResource("config.yml");
          $this->config = new Config($this->getDataFolder() . "config.yml");
          $this->blocker = $this->config->getNested("Settings.blocked-commands", []);
